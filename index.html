@@ -1,0 +1,100 @@
+<!-- o nome do arquivo index é para a página inicial. A página inicial do site mostra o index -->
+<!--  -->
+
+<!doctype html>  <!-- informa ao agente de usuário a versão do html que deve ser renderizada --> 
+
+<html lang = "pt-br"> <!-- informa para o browser que o texto está em português brasileiro -->
+   
+    <head>  <!-- dentro de head basicamente terá sempre title  -->
+        <title> Cardápio - Farid Steakhouse </title> <!-- título que aparece no resultado de busca do navegador-->
+        <meta charset = "utf-8">  <!-- evita ter problemas com acentos (é, há, ção, etc) -->
+        <!-- <meta name = "" content = "">  -> não vai aparecer no browser, mas pode aparecer no resultado de busca -->
+        <meta name = "author" content = "Thalita">  <!-- autor --> 
+        <meta name = "description" content = "Cardápio">  <!-- descrição da página --> 
+        <meta name = "keywords" content = "C005, css, html5">  <!-- palavras chave --> 
+
+        <link rel="stylesheet" href="CSS/cardapio.css" > <!-- vai vincular esse código com o código Estilo.CSS que esta dentro da pasta CSS. Assim, fica mais "limpo" -->
+    </head>
+    
+
+    <body>  <!-- código para ser visto no browser --> 
+        <div id = "principal" > <!-- sera usado para centralizar tudo -->  
+            <!-- <main>
+                <section class = "content-section-1">
+                    <article>
+                        <header class="content-header">
+                            <h1> Cardápio </h1>
+                        </header>
+                    </article>
+                </section>
+            </main> -->
+            
+            <header class = "hero"> <!-- dentro do div tem um header -->
+                <nav> <!-- dentro do header tem uma nav -->
+                    <ul> <!-- dentro da nav tem uma ul e dentro do ul tem as listas -->
+                        <li> <a href = "index.html">Início</a> </li> <!-- quando clicar em inicio volta para a página inicial (index) -->
+                        <li> <a href = "QuemSomos.html">Quem somos</a> </li> <!-- o # cria um link falso -->
+                        <li> <a href = "Reservas.html">Reservas</a> </li> <!-- o # cria um link falso -->
+                        <li> <a href = "Contatos.html">Contatos</a> </li> <!-- o # cria um link falso -->
+                    </ul>
+                </nav>
+
+                <div class = "hero-content"> <!-- cria outra div dentro do header -->
+
+                    <h1> <!-- título -->
+                        Farid Steakhouse
+                        <!-- o título não deve ser escrito com todas as letras maiusculas, pois se alguem com deficiencia visual estiver 
+                        escutando a pagina num leitor de tela, o leitor falará o titulo como se fossem siglas. Deve-se colocar as letras minúsculas  -->
+                    </h1>
+                </div>
+            </header>
+
+            <main> <!-- duas sessoes (faixa horizontal) -->
+                <section class = "content-section"> 
+                    <div class = "card card-1">
+                        <img src = "Imagens/Entradas_.jpg" alt = "">
+                        <a href = "Entradas.html">Entradas</a>
+                    </div>
+
+                    <div class = "card card-2">
+                        <img src = "Imagens/Principais_.jpg" alt = "">
+                        <a href = "PratosPrincipais.html">Pratos Principais</a>
+                    </div>
+
+                    <div class = "card card-3">
+                        <img src = "Imagens/Carnes.jpg" alt = "">
+                        <a href = "Carnes.html">Carnes</a>
+                    </div>
+                </section>
+
+              
+                <section class = "content-section">
+                    <article>
+                        <div class = "card card-4">
+                            <img src = "Imagens/Promocoes_.jpg" alt = "">
+                            <a href = "Promocoes.html">Promoções</a>
+                        </div>
+    
+                        <div class = "card card-5">
+                            <img src = "Imagens/Bebidas_.png" alt = "">
+                            <a href = "Bebidas.html">Bebidas</a>
+                        </div>
+    
+                        <div class = "card card-6">
+                            <img src = "Imagens/Sobremesas_.jpg" alt = "">
+                            <a href = "Sobremesas.html">Sobremesas</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+
+            <footer class = "rodape">
+                <p> Copyright &copy; 2021</p>  <!-- Simbolo do copyright para ficar bonitinho -->
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

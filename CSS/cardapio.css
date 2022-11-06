@@ -1,0 +1,124 @@
+/* a parte do html esta vinculada aqui atraves do <link rel = "stylesheet" href = "CSS/cardapio.css" > */
+/* codigo mais limpo */
+/*  */
+ 
+body {
+    font-family: arial, sans-serif;
+    background: #ccc;
+    margin: 0; /* zera a margem dos lados */
+}
+
+.hero { /* acessa o header que tem o nome de class hero */
+    background-image: url(../Imagens/Restaurante.jpg);  /* o "../" serve para voltar na pasta anterior, dai volta e selecionada a pasta Imagens */
+    height: 550px; /* px sempre colado no numero */
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent; /* borda */
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.hero-content h1 { /* altera somente o titulo */
+    text-align: right;
+    margin: 425px 50px 0 0;
+    text-transform: uppercase;
+    font-size: 65px;
+    text-shadow: 3px 3px 4px #333; /* 3px pra direita, 3px pra baixo, 4px de esfumaçado e cor do esfumaçado*/
+}
+
+.hero nav ul {
+    text-align: right; /* alinha a ul para a direita */
+    margin: 20px 50px 0 0;
+}
+
+.hero nav li {
+    display: inline-block;  /* deixa as listas uma do lado da outra */
+    list-style: none;
+    margin-left: 10px; /* cria um espaçamento de 10px entre os blocos */
+    border: 1px solid white;
+}
+
+.hero nav a {
+    /* a cor chumabada e transparente sera aplicada apenas na linha. Para aplicar no bloco coloca display: block */
+    background: rgba(0, 0, 0, 0.3); /* o a serve para dar transparencia rgb variam de 0 a 255 e o a varia de 0 a 1 */
+    display: block;
+    padding: 10px;
+    color: white; /* cor da letra */
+    text-decoration: none; /* tira o sublinhado do link */
+    text-transform: uppercase; /* deixa as letras maiusculas */
+    font-size: 12px; /* diminui a fonte do link */
+    /* letter-spacing: 2px; /* espaço entre as letas */ 
+}
+
+.hero nav a:hover {
+    background: rgba(0, 0, 0, 0.5);  /* para quando passar com o mouse em cima  */
+}
+
+.content-section {
+    width: 80%;
+    margin: auto;
+    background-color: white;  /* cria uma borda branca */
+    padding: 8px; /* a borda cria um espaçamento de 15px com a letra */
+    margin-top: 15px;  /* para separar e criar duas bordas */
+    overflow: auto;
+}
+
+.content-section-1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;  /* cria uma borda branca */
+    padding: 8px; /* a borda cria um espaçamento de 15px com a letra */ 
+    height: 60px;
+    line-height: 60px; /* para centralizar ele tem que ter o mesmo valor do height */  
+}
+
+.content-header h1{
+    text-transform: uppercase;
+    color: white;  
+    font-size: 50px;
+    text-shadow: 3px 3px 4px #333; /* 3px pra direita, 3px pra baixo, 4px de esfumaçado e cor do esfumaçado*/
+    padding: 8px; /* a borda cria um espaçamento de 15px com a letra */
+    margin-top: 5px;  /* para separar e criar duas bordas */
+    overflow: auto;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card-1, .card-2, .card-4, .card-5 {
+    margin-right: 2%;
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.card a {
+    background: rgba(0, 0, 0, .1); /* o a serve para dar transparencia rgb variam de 0 a 255 e o a varia de 0 a 1 */
+    display: block;
+    padding: 15px;
+    color: white; /* cor da letra */
+    text-align: center;
+    text-decoration: none; /* tira o sublinhado do link */
+    text-transform: uppercase; /* deixa as letras maiusculas */
+    font-size: 15px;
+    background-color: rgb(77, 58, 58);
+}
+
+.rodape {
+    height: 80px;
+    line-height: 80px; /* para centralizar ele tem que ter o mesmo valor do height */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background: #6b6c68;
+}
